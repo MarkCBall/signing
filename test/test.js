@@ -9,10 +9,15 @@ contract('test', (accounts) => {
     const amount = "500"
     const nonce = "100"
 
+
+
+    /** CHANGE STUFF HERE **/
     const sig = await web3.eth.sign( web3EthAbi.encodeParameters(
       ["address", "uint256","uint256"],
       [receiver, amount, nonce]
     ), accounts[0])
+
+
 
 
     const ValidationTestDeployed = await ValidationTest.deployed();
