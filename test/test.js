@@ -83,7 +83,6 @@ contract('test', (accounts) => {
       strategy.userAddress,
       strategy.tokenInAddress,
       strategy.tokenOutAddress,
-      strategy.isUsdPriceRelatedToTokenIn
       );
     console.log("res",res)
   });
