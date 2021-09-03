@@ -31,11 +31,11 @@ const strategy = {
 
 
   //maybe validate on chain?
-  // "isUsdPriceRelatedToTokenIn": false,
   // "takeFeeFromInput": true,
   // "tokenOutMinAmount": null,//un-used
   // "maxGasPriceInGwei": 225,
   //not needed stuff below
+  // "isUsdPriceRelatedToTokenIn": false,
   // "blockchain": "Avalanche",
   // "createdByPartnerId": null,
   // "created_at": "2021-08-04T15:25:56.83874+00:00",
