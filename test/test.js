@@ -16,7 +16,6 @@ const types = {Strategy:[
     {name:"tokenInAddress", type:"address"},
     {name:"tokenOutAddress", type:"address"},
     // {name:"signedMessage", type:"uint"},//todo pull from strategy not like in script
-    // {name:"isUsdPriceRelatedToTokenIn", type:"uint"},
     // {name:"tokenInAmount", type:"uint"},
   ]}
 const strategy = {
@@ -28,11 +27,11 @@ const strategy = {
   "tokenInAddress": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
   "tokenOutAddress": "0x60781C2586D68229fde47564546784ab3fACA982",
   // "signedMessage": "0x71756b67b509b3a544dab3fc73f9d9e78788eb0ab35183dabd02f27f8ae9daf62adb886f7b9660fa23ad42cb2039c1b92d3c72a2a39e4e40ddace0d1d3c999131b",
-  // "isUsdPriceRelatedToTokenIn": false,
   // "tokenInAmount": "0.100000000000000000000000",
 
 
   //maybe validate on chain?
+  // "isUsdPriceRelatedToTokenIn": false,
   // "takeFeeFromInput": true,
   // "tokenOutMinAmount": null,//un-used
   // "maxGasPriceInGwei": 225,
@@ -83,7 +82,8 @@ contract('test', (accounts) => {
       strategy.identifier,
       strategy.userAddress,
       strategy.tokenInAddress,
-      strategy.tokenOutAddress
+      strategy.tokenOutAddress,
+      strategy.isUsdPriceRelatedToTokenIn
       );
     console.log("res",res)
   });
